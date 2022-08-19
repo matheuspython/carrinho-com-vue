@@ -23,6 +23,7 @@ export default {
     width: 100%;
     max-width: 1280px;
     padding: 15px 2%;
+    margin: 0 auto;
   }
   .boxlist{
     width: 100%;
