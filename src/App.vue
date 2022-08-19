@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <TheHeader />
   <router-view/>
 </template>
-
+<script>
+import TheHeader from './components/TheHeader.vue';
+export default {
+    components: { TheHeader }
+}
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-nav {
-  padding: 30px;
+html, body{
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Manrope', sans-serif;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body{
+  background: #202020;
+  color: #fff;
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
 }
 </style>
